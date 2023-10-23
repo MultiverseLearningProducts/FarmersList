@@ -1,21 +1,19 @@
 class Cart {
     constructor() {
-      this.products = [];
-      this.total = 0;
+        this.products = [];
+        this.total = 0;
     }
-  
+
     addProduct(product) {
-      this.products.push(product);
-      this.total += product.price; 
+        this.products.push(product);
+        this.total += product.price;
     }
-  
-    removeProduct(product) {
-      const index = this.products.indexOf(product);
-      if (index !== -1) {
-        this.products.splice(index, 1);
+
+    removeProduct(i) {
+        const product = this.products[i];
+        this.products.splice(i, 1);
         this.total -= product.price;
-      }
     }
 }
 
-module.exports = Cart
+module.exports = Cart;

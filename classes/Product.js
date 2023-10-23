@@ -7,7 +7,7 @@ class Product {
     }
     display() {
         const dollar = "$";
-        return `Name: ${this.name}, Price: ${dollar} ${this.price}, Description: ${this.description}`;
+        return `Name: ${this.name}, Price: ${dollar}${this.price}, Description: ${this.description}`;
     }
 }
 
