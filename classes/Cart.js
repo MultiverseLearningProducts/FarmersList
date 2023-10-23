@@ -1,15 +1,20 @@
-class Cart{
-    constructor(Products,total){
-        this.Products = []
-        this.total = 0
+class Cart {
+    constructor() {
+      this.products = [];
+      this.total = 0;
     }
-    addProduct(Pruduct){
-        this.Products.push(Pruduct)
-        this.total +=1
+  
+    addProduct(product) {
+      this.products.push(product);
+      this.total += product.price; 
     }
-    removeProduct(Product){
-        this.Products.shift()
-        this.total -=1
+  
+    removeProduct(product) {
+      const index = this.products.indexOf(product);
+      if (index !== -1) {
+        this.products.splice(index, 1);
+        this.total -= product.price;
+      }
     }
 }
 
