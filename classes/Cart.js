@@ -16,7 +16,6 @@ class Cart {
         this.total -= product.price;
       }
     }
-  }
 }
 
 module.exports = Cart
