@@ -25,6 +25,9 @@ class Cart {
         this.products = []
         this.total = 0
     }
+    removeItemByName(product){
+        return this.products.filter((item)=>item.name !== product.name)
+    }
 }
 
 module.exports = Cart;
