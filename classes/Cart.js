@@ -1,7 +1,7 @@
 class Cart{
     constructor(){
-        const products = [];
-        let total = 0;
+        this.products = [];
+        this.total = 0;
     }
 
     addProduct(product){
@@ -9,10 +9,12 @@ class Cart{
         this.total += product.price;
     }
 
-    removeProduct(product){
-        const indexProduct = this.products.map(e => e.name).indexOf(product.name);
-        product.splice(indexProduct, 1);
+    removeProduct(indexProduct){
+       // const indexProduct = this.products.map(e => e.name).indexOf(product.name);
+       // console.log(this.products[indexProduct]);
+        //console.log(this.products[indexProduct].price);
         this.total -= this.products[indexProduct].price;
+        this.products.splice(indexProduct, 1);
     }
 }
 

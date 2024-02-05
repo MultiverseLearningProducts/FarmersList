@@ -2,7 +2,15 @@
 const Product = require("./classes/Product.js");
 const Cart = require("./classes/Cart.js");
 
-
+//const testCart = new Cart();
+//const testProduct = new Product("apple", 1.00, "desc");
+//const testProduct2 = new Product("orange", 1.50, "desc");
+//console.log(testCart);
+//testCart.addProduct(testProduct);
+//testCart.addProduct(testProduct2);
+//console.log(testCart.total);
+//testCart.removeProduct(testProduct);
+//console.log(testCart.total);
 
 
 
