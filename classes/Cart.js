@@ -20,6 +20,14 @@ class Cart {
     getTotal() {
         return this.total
     }
+
+    clear(){
+        let length = this.products.length;
+
+        this.products.splice(0, length)
+        this.total = 0
+        
+    }
 }
 
 module.exports = Cart
