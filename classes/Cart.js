@@ -28,6 +28,16 @@ class Cart {
         this.total = 0
         
     }
+
+    removeItemByName(name) {
+        for (let i = 0; i < this.products.length; i++) {
+            let productName = this.products[i].name
+
+            if(productName === name) {
+                this.products.splice(i, 1)
+            }
+        }
+    }
 }
 
 module.exports = Cart
