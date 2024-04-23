@@ -2,9 +2,7 @@
 
 const Product = require('./classes/Product')
 const Cart = require('./classes/Cart')
-
-
-
+const Customer = require('./classes/Customer')
 
 
 
