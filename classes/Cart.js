@@ -16,6 +16,10 @@ class Cart {
 
         this.products.splice(i, 1)
     }
+
+    getTotal() {
+        return this.total
+    }
 }
 
 module.exports = Cart
