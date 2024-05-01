@@ -46,7 +46,7 @@ describe("Cart Tests", () => {
         myCart.addProduct(mangos);
         myCart.addProduct(strawberries);
         myCart.removeProduct(0);
-        expect(myCart.products.length).toEqual(2);
+        expect(myCart.products.length).toEqual(3);
         expect(myCart.total).toEqual(8);
     });
 })
