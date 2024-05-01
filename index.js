@@ -1,13 +1,8 @@
 // Import Classes Here
-
-
-
-
-
-
-
-
-
+const Product = require('./Product');
+const Cart = require('./Cart');
+const Customer = require('./Customer');
+const Auth = require('./Auth');
 
 // DO NOT EDIT BELOW THIS LINE
 try {
