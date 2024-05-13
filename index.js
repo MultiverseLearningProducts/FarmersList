@@ -1,7 +1,7 @@
 // Import Classes Here
 const Product = require('./Product');
 // Example of creating a new Product instance and using the display method
-let myProduct = new Product("Example Product", 19.99, "This is a sample description.");
+let myProduct = new Product('Example Product', 19.99, 'This is a sample description.');
 console.log(myProduct.display());
 //
 const Cart = require('./Cart');
@@ -11,7 +11,7 @@ console.log(cart); // Initially empty cart
 //
 const Customer = require('./Customer');
 // Example usage
-let customer = new Customer("Jane Doe", "jane.doe@example.com", "123 Elm Street");
+let customer = new Customer('Jane Doe', 'jane.doe@example.com', '123 Elm Street');
 console.log(customer);
 
 // DO NOT EDIT BELOW THIS LINE
