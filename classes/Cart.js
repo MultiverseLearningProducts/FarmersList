@@ -13,13 +13,10 @@ class Cart {
     }
   }
 
-  removeProduct(product) {
-    const index = this.products.indexOf(product);
-    if (index > 0) {
-      this.total -= this.products[index].price;
-      this.products.splice(index, 1);
-    }
-    console.log(index);
+  removeProduct(i) {
+    if (i > this.products.length) return "Product is no longer in stock";
+    this.total -= this.products[i].price;
+    this.products.splice(i, 1);
   }
 }
 
