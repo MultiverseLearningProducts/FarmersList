@@ -1,16 +1,23 @@
 class Cart {
-  constructor(products = [], number = 0) {
+  constructor(products = [], total = 0) {
     this.products = products;
-    this.number = number;
+    this.total = total;
   }
+
   addProduct(product) {
     this.products.push(product);
+    this.total += product.price;
   }
+
   removeProduct(index) {
-    if(this.products(index) === undefined) {
+    if (this.products[index] === undefined) {
       return "Item not found!";
     } else {
       this.products.splice(index, 1);
+      this.total = 0;
+      this.products.forEach(product => {
+        this.total += product.price;
+      });
     }
   }
 }
