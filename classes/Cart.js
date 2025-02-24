@@ -3,12 +3,10 @@ class Cart {
     this.products = products;
     this.total = total;
   }
-
   addProduct(product) {
     this.products.push(product);
     this.total += product.price;
   }
-
   removeProduct(index) {
     if (this.products[index] === undefined) {
       return "Item not found!";
