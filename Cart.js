@@ -7,7 +7,6 @@ class Cart {
     addProduct(product) {
         this.total += product.price;
         this.products.push(product)
-        console.log(this.products)
     }
 
     removeProduct(index) {
@@ -15,6 +14,11 @@ class Cart {
             const removed = this.products.splice(index, 1)[0]
             this.total -= removed.price
         }
+    }
+
+    getTotal() {
+        console.log(this.total)
+        return this.total;
     }
 }
 
