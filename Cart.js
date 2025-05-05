@@ -20,6 +20,14 @@ class Cart {
         console.log(this.total)
         return this.total;
     }
+
+    clear(){
+        this.products = []
+        this.total = 0
+        console.log(this.total)
+        console.log(this.products)
+        return this.total
+    }
 }
 
 module.exports = Cart;

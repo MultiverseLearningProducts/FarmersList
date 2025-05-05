@@ -12,6 +12,8 @@ cart1.addProduct(newProd)
 cart1.addProduct(newProd2)
 cart1.getTotal()
 
+cart1.clear()
+
 
 
 
