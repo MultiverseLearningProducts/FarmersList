@@ -1,15 +1,9 @@
 // Import Classes Here
 const Product = require("./Product")
-console.log(Product)
-console.log(Product.display)
+const Cart = require("./Cart")
 
 
-
-
-
-
-
-
+// const cart1 = new Cart()
 
 // DO NOT EDIT BELOW THIS LINE
 try {
