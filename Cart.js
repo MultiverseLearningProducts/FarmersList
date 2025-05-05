@@ -28,6 +28,16 @@ class Cart {
         console.log(this.products)
         return this.total
     }
+
+    removeItemByName(name) {
+        const index = this.products.findIndex(product => product.name === name);
+        console.log(`PRODUCTS: ${this.products}, TOTAL: ${this.total}`)
+        if (index !== -1) {
+            const removed = this.products.splice(index, 1)[0]
+            this.total -= removed.price;
+            console.log(`PRODUCTS: ${this.products}, TOTAL: ${this.total}`)
+        }
+    }
 }
 
 module.exports = Cart;

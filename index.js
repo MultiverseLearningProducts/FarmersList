@@ -25,9 +25,9 @@ customer.addToOrderHistory(cart2);
 
 customer.getRewardPoints();
 
+cart2.removeItemByName('Pear')
 
-
-cart1.clear()
+// cart1.clear()
 
 
 
